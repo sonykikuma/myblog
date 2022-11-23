@@ -28,7 +28,7 @@ function PostContent(props) {
         />
       );*/
 
-    paragraph(paragraph) {
+    p(paragraph) {
       const { node } = paragraph;
 
       if (node.children[0].type === "image") {
@@ -48,12 +48,14 @@ function PostContent(props) {
       return <p>{paragraph.children}</p>;
     },
     code(code) {
-      const { language, value } = code;
+      const { className, children } = code;
+      const language = className.split("-")[1]; // className is something like language-js => We need the "js" part here
+
       return (
         <SyntaxHighlighter
           style={atomDark}
           language={language}
-          children={value}
+          children={children}
         />
       );
     },
