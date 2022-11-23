@@ -1,4 +1,4 @@
-import classes from "./posts-content.module.css";
+import classes from "./post-content.module.css";
 import PostHeader from "./post-header";
 import ReactMarkdown from "react-markdown";
 import Image from "next/image";
@@ -33,6 +33,7 @@ function PostContent(props) {
 
       if (node.children[0].type === "image") {
         const image = node.children[0];
+
         return (
           <div className={classes.image}>
             <Image

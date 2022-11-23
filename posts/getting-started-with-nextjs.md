@@ -1,5 +1,5 @@
 ---
-title:'Getting Started with NextJS'
+title:Getting Started with NextJS
 excerpt: NextJS is the React framework for production-it makes building fullstack react apps and sites a breeze.
 image:getting-started-nextjs.png
 isFeatured:true
